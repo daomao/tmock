@@ -476,7 +476,7 @@ public class ToStringStyle implements Serializable {
 				Iterator it = ((Collection) value).iterator();
 				while (it.hasNext()) {
 
-					appendValue(buffer, fieldName, it, detail);
+					appendValue(buffer, fieldName, it.next(), detail);
 				}
 				// if (detail) {
 				// appendDetail(buffer, fieldName, (Collection) value);
