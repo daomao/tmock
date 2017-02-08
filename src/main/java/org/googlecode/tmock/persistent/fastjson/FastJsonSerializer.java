@@ -25,13 +25,7 @@ public class FastJsonSerializer implements Serializer {
 	private FastJsonSerializer() {
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see
-	 * com.travelsky.ota.test.util.mock.serializer.Serializer#deserializeFromString
-	 * (java.lang.String, java.lang.Class)
-	 */
+
 	public Object deserialize(String content)
 			throws SerializationException {
 		if (content == null) {
@@ -46,13 +40,7 @@ public class FastJsonSerializer implements Serializer {
 		}
 	}
 
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see
-	 * com.travelsky.ota.test.util.mock.serializer.Serializer#serializeToString
-	 * (T)
-	 */
+
 	public  String serialize(Object t) throws SerializationException {
 		if (t == null) {
 			return "";
